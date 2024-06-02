@@ -1,5 +1,5 @@
 ---
-const { title, description } = Astro.props
+const { title, description, tagLine } = Astro.props
 ---
 
 <footer id="footer" class="panel">
@@ -8,9 +8,10 @@ const { title, description } = Astro.props
       <section>
         <h2>{title}</h2>
         <p>{description}</p>
+        <p>{tagLine}</p>
       </section>
       <section>
-        <h2>Follow us on ...</h2>
+        <h2>Follow us</h2>
         <ul class="icons">
           <li>
             <a href="#" class="icon brands fa-twitter" aria-label="Social">
@@ -44,10 +45,10 @@ const { title, description } = Astro.props
           </li> -->
         </ul>
       </section>
-      <p class="copyright">
+      <!-- <p class="copyright">
         &copy; AREA44. Design: <a href="http://html5up.net">HTML5 UP</a>.<br />
         Images: <a href="http://unsplash.com">Unsplash</a>
-      </p>
+      </p> -->
     </div>
     <div>
       <section>

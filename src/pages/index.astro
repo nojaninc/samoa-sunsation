@@ -2,12 +2,13 @@
 import BaseHead from '@/components/BaseHead.astro'
 import Header from '@/components/Header.astro'
 import Footer from '@/components/Footer.astro'
+import Services from '@/components/Services.astro'
 import Gallery from '@/components/Gallery.astro'
 import ExternalScripts from '@/components/ExternalScripts.astro'
 
 let title = 'SamoaSunsation'
-let description =
-  'Your gateway to experiencing Samoa'
+let description = 'Embrace, Explore, Experience: SamoaSunsation'
+let tagLine = 'With over 20 years of expertise in tourism, SamoaSunsation is your trusted partner for unforgettable group journeys in Samoa. Our extensive local networks ensure that we can offer the best and most unique experiences when booking with us. Embrace the warmth of the Samoan sun, explore pristine landscapes, and experience the genuine hospitality of its people with us. Let us leverage our experience and networks to take your group on a journey beyond the ordinary, where every moment is a Sunsation to cherish forever.'
 ---
 
 <!doctype html>
@@ -21,7 +22,8 @@ let description =
 
   <body class="is-preload">
     <Header title={title} />
-    <Footer title={title} description={description} />
+    <Services />
+    <Footer title={title} description={description} tagLine={tagLine} />
     <Gallery title={title} description={description} />
     <ExternalScripts />
   </body>

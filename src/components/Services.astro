@@ -1,0 +1,16 @@
+---
+let servicesArray = [
+    { name: "Tailored Group Tours", description: "Customized group tours designed to suit the specific interests and preferences of your group." },
+    { name: "Accommodation Arrangements", description: "Assistance with booking accommodations ranging from luxury resorts to traditional Samoan fales." },
+    { name: "Transportation Coordination", description: "Seamless transportation arrangements, including airport transfers and guided tours." },
+    { name: "Cultural Experiences", description: "Immersive cultural activities such as traditional dance performances, village visits, and authentic culinary experiences." },
+    { name: "Adventure Excursions", description: "Exciting adventure excursions including snorkeling, diving, hiking, and waterfall exploration." },
+    { name: "Local Expertise", description: "Access to knowledgeable guides with extensive local insights, ensuring an enriching and authentic experience." },
+    { name: "Event Planning", description: "Expert assistance in organizing special events such as weddings, corporate retreats, and family reunions." },
+    { name: "24/7 Support", description: "Dedicated support throughout your journey, ensuring a stress-free and memorable travel experience." }
+];
+---
+
+<ul>
+{servicesArray.map((service) => <li>{service.name}: {service.description}</li>)}
+</ul>
